@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirección Aleatoria de Encuesta</title>
+</head>
+<body>
+    <script>
+        window.onload = function() {
+            // Enlaces de tus formularios
+            var formA = 'https://forms.office.com/r/RJbP5mRSqK';
+            var formB = 'https://forms.office.com/r/fZ7wPjxNCD';
+
+            // Función para redirigir aleatoriamente
+            var randomNumber = Math.random(); // Genera un número aleatorio entre 0 y 1
+            if (randomNumber < 0.5) {
+                window.location.href = formA; // Redirige al Formulario A
+            } else {
+                window.location.href = formB; // Redirige al Formulario B
+            }
+        }
+    </script>
+    <noscript>Necesitas tener JavaScript habilitado para participar en esta encuesta.</noscript>
+</body>
+</html>
